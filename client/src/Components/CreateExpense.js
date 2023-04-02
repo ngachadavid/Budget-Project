@@ -4,7 +4,7 @@ import useFetch from "./useFetch";
 
 function CreateExpense({show, setShow, handleClose, user, onCreateExpense}) {
 
-    const [amount, setAmount] = useState(" ")
+    const [amount, setAmount] = useState("")
     const [category, setCategory] = useState("")
     const [month, setMonth] = useState("")
 
@@ -25,12 +25,14 @@ function CreateExpense({show, setShow, handleClose, user, onCreateExpense}) {
         body: JSON.stringify(newExpense),
         })
        .then((r)=> r.json())
-       .then ((newExpense)=>onCreateExpense(newExpense))
-       setAmount("")
-       setCategory("")
-       setMonth("")
-       setShow(false)
-    }
+       .then ((newExpense)=>{
+        onCreateExpense(newExpense);
+       setAmount("");
+       setCategory("");
+       setMonth("");
+       setShow(false);
+    });
+}
 
     return(
         <Modal show={show}>

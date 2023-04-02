@@ -9,8 +9,6 @@ Category.destroy_all
 Expense.destroy_all
 
 
-puts "💀 Seeding categories 🔥"
-
 c1 = Category.create(category:"Groceries")
 c2 = Category.create(category:"Entertainment")
 c3 = Category.create(category:"Travel")
@@ -25,9 +23,6 @@ c11 = Category.create(category:"Medical")
 c12 = Category.create(category:"Savings")
 c13 = Category.create(category:"Others")
 
-puts "💀 Seeding done 🔥"
-
-puts "💀 Seeding expenses 🔥"
 
 Expense.create(amount:200, user_id: 1, category_id: c1.id)
 Expense.create(amount:1200, user_id: 1, category_id:c7.id)
@@ -38,4 +33,3 @@ Expense.create(amount:120, user_id: 1, category_id: c8.id)
 Expense.create(amount:230, user_id: 1, category_id: c9.id)
 Expense.create(amount:150, user_id: 1, category_id: c12.id)
 
-puts "💀 Seeding done 🔥"

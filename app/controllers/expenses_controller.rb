@@ -56,7 +56,7 @@ class ExpensesController < ApplicationController
     # end
 
     def expense_params
-        params.require(:expense).permit(amount, :user_id, :category_id, :date)
+        params.require(:expense).permit(:amount, :user_id, :category_id, :date)
     end
 
     def user_authorized_to_view
