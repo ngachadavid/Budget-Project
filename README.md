@@ -13,7 +13,7 @@ update budget
 # About
 Its front end repository is https://github.com/ngachadavid/budget-creact
 
-The frontend deployed app is 
+The frontend deployed app is https://budget-buddy-jade.vercel.app/
 
 The backend deployed api is 
 
