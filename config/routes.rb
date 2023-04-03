@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  #main controllers 
+  #main controllers
   resources :users, only: [:index, :create, :update ] do
     resources :expenses, only: [:index, :create, :show, :update, :destroy]
   end
   resources :categories, only: [:index]
 
-  #Authentication routes 
+  #Authentication routes
   get "/me", to: "users#show"
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"

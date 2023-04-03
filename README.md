@@ -21,7 +21,7 @@ Unzip the downloaded files in a folder of choice.
 Open the index file from the zipped file with any browser.
 
 Live Link
-The live link for the project is 
+The live link for the project is
 Technology Used
 REACT - For the frontend
 
